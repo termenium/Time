@@ -116,7 +116,7 @@ nav ul li a:hover:before {
 }
 
 #am-pm {
-    font-size: 70px;
+    font-size: 150px;
     padding-left: 10px;
 }
 
@@ -127,10 +127,10 @@ nav ul li a:hover:before {
 }
 
 #date {
-    font-size: 40px;
+    font-size: 55px;
     margin-right: 20px;
 }
 
 #day {
-    font-size: 40px;
+    font-size: 55px;
 }
