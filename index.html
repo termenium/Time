@@ -1,0 +1,55 @@
+<html>
+<head>
+  <style>
+    /* This is the CSS code for styling the website */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-top: 50px;
+    }
+
+    #clock {
+      font-size: 48px;
+      text-align: center;
+      color: #333;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Current Time</h1>
+  <div id="clock">
+    <!-- This is where the current time will be displayed -->
+  </div>
+  <script>
+    // This is the JS code for updating the current time
+    // Get the clock element by its id
+    var clock = document.getElementById("clock");
+
+    // Define a function to update the clock
+    function updateClock() {
+      // Get the current date and time
+      var now = new Date();
+
+      // Format the time as hh:mm:ss
+      var hours = now.getHours();
+      var minutes = now.getMinutes();
+      var seconds = now.getSeconds();
+      var time = hours + ":" + minutes + ":" + seconds;
+
+      // Display the time on the clock element
+      clock.innerHTML = time;
+    }
+
+    // Call the updateClock function every second
+    setInterval(updateClock, 1000);
+  </script>
+</body>
+</html>
