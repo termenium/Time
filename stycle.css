@@ -1,0 +1,136 @@
+body {
+    background-color: #0d0d0d;
+    color: white;
+    font-family: 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+nav {
+    background-color: #1d1f21;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav ul li a:before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover:before {
+    transform: translateX(10px);
+}
+
+.nav-options {
+    display: flex;
+    align-items: center;
+}
+
+#clock {
+    text-align: center;
+    font-size: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#time-date {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+#hours, #minutes, #seconds {
+    font-size: 150px;
+    margin-right: 20px;
+}
+
+#colon1, #colon2 {
+    font-size: 150px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#am-pm {
+    font-size: 70px;
+    padding-left: 10px;
+}
+
+#date-day {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#date {
+    font-size: 40px;
+    margin-right: 20px;
+}
+
+#day {
+    font-size: 40px;
+}
